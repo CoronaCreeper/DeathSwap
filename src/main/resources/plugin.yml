@@ -2,3 +2,8 @@ name: DeathSwap
 version: '${project.version}'
 main: pl.coronacreeper.Main
 api-version: 1.18
+commands:
+  start:
+    permission: DeathSwap.start
+  end:
+    permission: DeathSwap.stop
