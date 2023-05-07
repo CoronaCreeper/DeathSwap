@@ -1,0 +1,7 @@
+name: DeathSwap
+version: '${project.version}'
+main: pl.deathswap.DeathSwap
+api-version: 1.19
+commands:
+  deathswap:
+    permission: aaa.aaa
