@@ -73,6 +73,12 @@ public class GameLogic implements CommandExecutor, Listener, Runnable {
             Bukkit.getOnlinePlayers().forEach(v->v.showTitle(Title.title(Component.text(ChatColor.GOLD+"Ogłoszenie!"), Component.text(ChatColor.GRAY+"Od teraz można robić pułapki!"))));
         }
         Bukkit.getOperators().stream().filter(v->v.isOnline()).forEach(v->v.getPlayer().sendMessage(ChatColor.GRAY+"Nastepna zmiana za "+ChatColor.RED+leftTime+ChatColor.GRAY+" sekund!"));
+
+
+        for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
+            assert onlinePlayer.getWorldBorder() != null;
+            onlinePlayer.getWorldBorder().setSize(onlinePlayer.getWorldBorder().getSize()-50);
+        }
     }
 
     void updateBossbar() {
