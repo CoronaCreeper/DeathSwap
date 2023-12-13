@@ -50,11 +50,6 @@ public class GameLogic implements CommandExecutor, Listener, Runnable {
             Bukkit.broadcast(Component.text(prefix+ChatColor.RED+"Pozostało "+ChatColor.GOLD+leftTime+ChatColor.RED+" sekund!"));
             Bukkit.getOnlinePlayers().forEach(v->v.playSound(v.getLocation(), "minecraft:entity.experience_orb.pickup", 1, 1));
         }
-
-        sdkfdojfdjgadfgbgfdagbadg'ddaffasdlfkdsaf;kjsdlfjlsd14
-
-
-    asdsadsadsad'
     }
 
     void swap() {
